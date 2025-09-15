@@ -1,0 +1,38 @@
+{
+  "name": "tune-mcp",
+  "version": "0.1.2",
+  "description": "MCP support for tune",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai",
+    "chat",
+    "tools",
+    "tune"
+  ],
+  "scripts": {
+    "test": "node test/index.js",
+    "test:watch": "node --watch test/index.js"
+  },
+  "author": "Ilya Ovdin <iovdin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iovdin/tune-mcp"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "tune-sdk": "file:../tune"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/server-everything": "^2025.8.4",
+    "tune-fs": "^0.1.2",
+    "tune-sdk": "file:../tune"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2"
+  }
+}

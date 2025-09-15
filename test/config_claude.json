@@ -1,0 +1,15 @@
+{ 
+  "mcpServers": {
+    "everything-stdio": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"],
+      "env": { "HELLO": "WORLD" }
+    },
+    "everything-http": {
+      "url":"http://localhost:3011/mcp" 
+    },
+    "everything-sse": {
+      "url":"http://localhost:3010/sse" 
+    }
+  }
+}
