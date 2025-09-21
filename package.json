@@ -1,6 +1,6 @@
 {
   "name": "tune-mcp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "MCP support for tune",
   "main": "src/index.js",
   "files": [
@@ -25,12 +25,12 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "tune-sdk": "file:../tune"
+    "tune-sdk": "latest"
   },
   "devDependencies": {
     "@modelcontextprotocol/server-everything": "^2025.8.4",
     "tune-fs": "^0.1.2",
-    "tune-sdk": "file:../tune"
+    "tune-sdk": "latest"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.2"

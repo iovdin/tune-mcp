@@ -243,16 +243,19 @@ module.exports = function createMCPmiddlewares({ config, ...rest } = {}) {
     if (!configs) {
       return
     }
-    let result = []
+    let result = (args?.output === "all") ? [] : undefined
     for (const md of mds) {
       let res = await md(name, args, context)
       if (res) {
-        if (args?.output === "first") {
-          return res
+        if (args?.output === "all") {
+          result = result.concat(res)
+        } else {
+          result = res
+          break
         }
-        result = result.concat(res)
       }
     }
+
     return result
   }
 }
