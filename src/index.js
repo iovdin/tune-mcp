@@ -153,7 +153,7 @@ const createMCPmiddleware = async function(config = {}) {
     if (args?.type && args.type !== "any") {
       result = result.filter(item => item.type === args.type)
     }
-    return (args?.output === "all") ? result : result[0];
+    return result;
   }
 }
 
